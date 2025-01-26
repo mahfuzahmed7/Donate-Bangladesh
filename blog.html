@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+
+    <!-- Daisy UI and Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/3e1f08480b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Navbar section start -->
+    <nav id="navbar" class="bg-pink-50">
+        <div class="flex justify-between items-center p-4 mx-10  ">
+            <div>
+                <a href="home.html"> <button class="btn bg-blue-500 text-lg">Home</button></a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <img src="assets/logo.png" alt="">
+                <h3 class="text-lg">Donate Bangladesh</h3>
+            </div>
+            <div class="flex items-center space-x-4">
+                <img src=" assets/coin.png" alt="">
+                <h3 id="initial-donation" class="text-lg">100000 BDT</h3>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- Navbar section ends -->
+    <main class="mx-20">
+        <!-- FAQ section start -->
+        <h3 class="mt-10 text-3xl font-bold mb-5">Important FAQ <i class="fa-solid fa-question text-blue-500"></i></h3>
+        <!-- Question- 1 -->
+        <div class="collapse collapse-arrow border-2 border-solid border-gray-200 rounded-lg m-2 ">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page
+                    so that programs can change the document structure, style, and content. The DOM represents the
+                    document as nodes and objects; that way, programming languages can interact with the page.
+
+                    A web page is a document that can be either displayed in the browser window or as the HTML source.
+                    In both cases, it is the same document but the Document Object Model (DOM) representation allows it
+                    to be manipulated. As an object-oriented representation of the web page, it can be modified with a
+                    scripting language such as JavaScript.</p>
+            </div>
+        </div>
+        <!-- Question- 2 -->
+        <div class="collapse collapse-arrow border-2 border-solid border-gray-200 rounded-lg m-2 ">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>Selecting an element from the DOM (Document Object Model) is a crucial part of web development. Using
+                    JavaScript, you can access and manipulate elements within a web document. There are several methods
+                    to do this:
+
+                    getElementById(): Selects an element based on its unique ID.
+
+                    getElementsByClassName(): Selects elements by their class name, returning a collection of all
+                    matching elements.
+
+                    getElementsByTagName(): Selects elements by their tag name, also returning a collection.
+
+                    querySelector(): Selects the first element that matches a CSS selector.
+
+                    querySelectorAll(): Selects all elements that match a CSS selector, returning a NodeList.</p>
+            </div>
+        </div>
+        <!-- Question- 3 -->
+        <div class="collapse collapse-arrow border-2 border-solid border-gray-200 rounded-lg m-2 ">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why
+                is it useful?</div>
+            <div class="collapse-content">
+                <p>Event Delegation is a powerful technique in JavaScript that leverages event bubbling to manage events
+                    more efficiently. Instead of adding multiple event listeners to individual elements, you attach a
+                    single event listener to a common parent element. This parent element then handles events triggered
+                    by its children.
+                    <span class="font-bold"> Benefits:-</span>
+                    Performance: Reduces the number of event listeners needed, which is more efficient, especially for
+                    large numbers of elements.
+
+                    Dynamic Elements: Simplifies handling elements that are added or removed dynamically. The parent
+                    listener handles these changes automatically.
+
+                    Maintainability: Leads to cleaner, less redundant code, making it easier to maintain.
+                </p>
+            </div>
+        </div>
+        <!-- Question- 4 -->
+        <div class="collapse collapse-arrow border-2 border-solid border-gray-200 rounded-lg m-2 ">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                using the DOM?</div>
+            <div class="collapse-content">
+                <p>Attributes Manipulation:
+                    Attributes in HTML provide additional information about elements. Using the DOM, developers can
+                    retrieve, set, and remove these attributes. This includes accessing the current value of any
+                    attribute, modifying an element's attribute to update its state or properties dynamically, and
+                    removing an attribute to revert an element to its default behavior.Styles Manipulation:
+                    Manipulating styles directly or through CSS classes alters the visual presentation of elements,
+                    enhancing user experience. The style property allows the direct setting of individual CSS properties
+                    on an element, while the classList property provides methods to efficiently manage CSS classes. CSS
+                    variables (custom properties) allow centralized control over design tokens, and the getComputedStyle
+                    method provides a comprehensive view of an element's final appearance after applying all CSS rules
+                    and inheritance.</p>
+            </div>
+        </div>
+        <!-- FAQ section ends -->
+
+    </main>
+
+</body>
+
+</html>
